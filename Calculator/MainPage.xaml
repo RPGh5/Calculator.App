@@ -5,12 +5,12 @@
 
     <ScrollView>
         <StackLayout>
-            <Label x:Name="displayLabel" Text="0" FontSize="30" Margin="10" TextColor="White" />
+            <Label x:Name="displayLabel" Text="0" FontSize="30" Margin="10"/>
 
             <ListView x:Name="historyListView" ItemsSource="{Binding history}" IsVisible="True" ItemTapped="historyListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding CalculationString}" Detail="{Binding Result}" TextColor="White"/>
+                        <TextCell Text="{Binding CalculationString}" Detail="{Binding Result}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
